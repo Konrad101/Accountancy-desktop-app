@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="608.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.menu.MenuController">
+   <children>
+      <VBox prefHeight="420.0" prefWidth="211.0" style="-fx-background-color: #252525;">
+         <children>
+            <Pane prefHeight="53.0" prefWidth="211.0">
+               <children>
+                  <Line endX="100.0" fill="#33333300" layoutX="101.5" layoutY="48.0" startX="-100.0" stroke="WHITE" />
+                  <Text fill="#e8e8e8" layoutX="44.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wpisane firmy">
+                     <font>
+                        <Font name="Calibri" size="23.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="13.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/company.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ScrollPane prefHeight="365.0" prefWidth="211.0" style="-fx-background: transparent; -fx-background-color: transparent;" stylesheets="@../../css/menuStyles/companiesListStyle.css">
+               <content>
+                  <VBox fx:id="companiesBox" prefHeight="362.0" prefWidth="191.0" />
+               </content></ScrollPane>
+         </children></VBox>
+      <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="396.5" style="-fx-background-color: #000000;">
+         <children>
+            <Pane prefHeight="121.0" prefWidth="397.0">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="148.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/icon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="43.0" prefWidth="397.0">
+               <children>
+                  <Text fill="#dadada" layoutX="46.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Księgowość" textAlignment="CENTER" wrappingWidth="304.0000076153964">
+                     <font>
+                        <Font name="Calibri" size="40.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane prefHeight="31.0" prefWidth="397.0">
+               <children>
+                  <Text fill="#696969f5" layoutX="127.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wersja 2021 1.9">
+                     <font>
+                        <Font name="Calibri Light" size="22.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Region prefHeight="25.0" prefWidth="397.0" />
+            <Pane prefHeight="178.0" prefWidth="397.0">
+               <children>
+                  <VBox layoutX="127.0" prefHeight="170.0" prefWidth="142.0">
+                     <children>
+                        <Button fx:id="addCompanyButton" mnemonicParsing="false" onAction="#openAddCompanyWindow" prefHeight="31.0" prefWidth="141.0" stylesheets="@../../css/menuStyles/menuButtonStyle.css" text="Dodaj firmę" textFill="#a2a2a2">
+                           <HBox.margin>
+                              <Insets right="7.0" top="7.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Yu Gothic Light" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="15.0" fitWidth="19.0" opacity="0.78" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/plus.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Button fx:id="importCompanyButton" mnemonicParsing="false" prefHeight="31.0" prefWidth="144.0" stylesheets="@../../css/menuStyles/menuButtonStyle.css" text="Importuj firmę" textFill="#a2a2a2">
+                           <HBox.margin>
+                              <Insets right="7.0" top="7.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Yu Gothic Light" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="15.0" fitWidth="19.0" opacity="0.78" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/import.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Button fx:id="openCompanyButton" mnemonicParsing="false" prefHeight="31.0" prefWidth="147.0" stylesheets="@../../css/menuStyles/menuButtonStyle.css" text="Otwórz " textFill="#a2a2a2">
+                           <HBox.margin>
+                              <Insets right="7.0" top="7.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Yu Gothic Light" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="15.0" fitWidth="19.0" opacity="0.78" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/folder.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

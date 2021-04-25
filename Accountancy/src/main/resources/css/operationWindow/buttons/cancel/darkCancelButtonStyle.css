@@ -1,0 +1,16 @@
+.button {
+    -fx-background-color: #373737;
+    -fx-background-radius: 0, 0, 0, 0;
+    -fx-background-insets: 0, 1, 2, 0;
+    -fx-border-width: 1px;
+    -fx-text-fill: #a2a2a2;
+    -fx-border-color: #a2a2a2;
+    -fx-font-family: "Calibri";
+    -fx-pref-width: 73px;
+    -fx-font-size: 14px;
+    -fx-padding: 3 10 3 10;
+}
+
+.button: hover {
+    -fx-background-color: #505050;
+}

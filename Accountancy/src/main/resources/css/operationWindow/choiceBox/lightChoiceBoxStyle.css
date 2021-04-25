@@ -1,0 +1,27 @@
+.choice-box {
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 0 0 1.5 0;
+    -fx-background-color: #999999, #d0d0d0;
+    -fx-text-fill: #373737;
+    -fx-font-family: "Calibri";
+    -fx-font-size:  14px;
+}
+
+.choice-box: focused {
+    -fx-background-color: #1a7eeb, #d0d0d0;
+}
+
+.context-menu {
+    -fx-background-color: #dfdfdf;
+    -fx-background-insets: 0, 1;
+    -fx-padding: 0.333333em 0.083333em 0.333333em 0.083333em;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2) , 12, 0.0 , 0 , 8 );
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: #373737;
+}
+
+.menu-item:focused {
+    -fx-background-color: #f3f3f3;
+}

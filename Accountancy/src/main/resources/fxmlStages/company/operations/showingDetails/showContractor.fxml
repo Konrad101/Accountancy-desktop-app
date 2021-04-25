@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="440.0" style="-fx-background-color: #e5e5e5;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.companyData.operations.showingDetails.ContractorDetailsController">
+    <children>
+        <HBox prefHeight="51.0" prefWidth="440.0">
+            <children>
+                <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                <Text fill="#474646db" strokeType="OUTSIDE" strokeWidth="0.0" text="Dane kontrahenta" textAlignment="CENTER" wrappingWidth="316.4794921875">
+                    <font>
+                        <Font name="Calibri Light" size="26.0" />
+                    </font>
+               <HBox.margin>
+                  <Insets top="4.0" />
+               </HBox.margin>
+                </Text>
+                <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            </children>
+            <VBox.margin>
+                <Insets top="3.0" />
+            </VBox.margin>
+        </HBox>
+        <VBox prefHeight="361.0" prefWidth="440.0">
+            <children>
+                <Region prefHeight="17.0" prefWidth="440.0" />
+                <Label text="Dane firmy">
+                    <VBox.margin>
+                        <Insets left="4.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="Calibri Italic" size="13.0" />
+                    </font>
+                </Label>
+                <Separator prefWidth="200.0" />
+                <GridPane prefHeight="140.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="114.33333333333333" minWidth="10.0" prefWidth="114.33333333333333" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="317.0" minWidth="10.0" prefWidth="245.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="11.0" HBox.hgrow="ALWAYS" />
+                                <Label prefHeight="17.0" prefWidth="105.0" text="NIP:">
+                           <HBox.margin>
+                              <Insets top="0.5" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri" size="13.0" />
+                           </font></Label>
+                            </children>
+                            <GridPane.margin>
+                                <Insets top="6.0" />
+                            </GridPane.margin>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                            <children>
+                                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="11.0" HBox.hgrow="ALWAYS">
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </Region>
+                                <Label prefHeight="17.0" prefWidth="90.0" text="Nazwa firmy:">
+                           <HBox.margin>
+                              <Insets top="0.5" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri" size="13.0" />
+                           </font></Label>
+                            </children>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <GridPane.margin>
+                                <Insets top="6.0" />
+                            </GridPane.margin>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                            <children>
+                                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="11.0" HBox.hgrow="ALWAYS" />
+                                <Label text="Adres budynku:">
+                           <HBox.margin>
+                              <Insets top="0.5" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri" size="13.0" />
+                           </font></Label>
+                            </children>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <GridPane.margin>
+                                <Insets top="6.0" />
+                            </GridPane.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="76.0" prefHeight="11.0" prefWidth="115.0" GridPane.rowIndex="3">
+                            <children>
+                                <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="11.0" HBox.hgrow="ALWAYS" />
+                                <Label text="Kod pocztowy:">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri" size="13.0" />
+                           </font></Label>
+                            </children>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <GridPane.margin>
+                                <Insets top="6.0" />
+                            </GridPane.margin>
+                        </HBox>
+                  <Label fx:id="NIPLabel" text="Label" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Calibri" size="13.0" />
+                     </font></Label>
+                  <Label fx:id="companyNameLabel" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Calibri" size="13.0" />
+                     </font></Label>
+                  <Label fx:id="addressLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Calibri" size="13.0" />
+                     </font></Label>
+                  <HBox layoutX="10.0" layoutY="100.0" prefHeight="11.0" prefWidth="115.0" GridPane.rowIndex="4">
+                     <children>
+                        <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="11.0" HBox.hgrow="ALWAYS" />
+                        <Label text="Miejscowość:">
+                           <font>
+                              <Font name="Calibri" size="13.0" />
+                           </font></Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets top="6.0" />
+                     </GridPane.margin>
+                  </HBox>
+                  <Label fx:id="companyCityLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Calibri" size="13.0" />
+                     </font></Label>
+                  <Label fx:id="zipCodeLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Calibri" size="13.0" />
+                     </font></Label>
+                    </children>
+                </GridPane>
+                <Region prefHeight="23.0" prefWidth="440.0" />
+                <Label layoutX="14.0" layoutY="10.0" text="Dane kontaktowe">
+                    <font>
+                        <Font name="Calibri Italic" size="13.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="4.0" top="12.0" />
+                    </VBox.margin>
+                </Label>
+                <Separator layoutX="10.0" layoutY="27.0" prefWidth="200.0" />
+                <HBox prefHeight="103.0" prefWidth="440.0">
+                    <children>
+                        <GridPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="86.0" prefWidth="432.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="120.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="320.0" minWidth="10.0" prefWidth="305.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="35.0" minHeight="24.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="24.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <HBox prefHeight="100.0" prefWidth="200.0">
+                                    <children>
+                                        <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="11.0" />
+                                        <Label text="Osoba kontaktowa:">
+                                 <HBox.margin>
+                                    <Insets top="0.5" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Calibri" size="13.0" />
+                                 </font></Label>
+                                    </children>
+                                    <GridPane.margin>
+                                        <Insets top="6.0" />
+                                    </GridPane.margin>
+                                </HBox>
+
+                                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                    <children>
+                                        <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="11.0" />
+                                        <Label prefHeight="17.0" prefWidth="105.0" text="Numer telefonu:">
+                                            <HBox.margin>
+                                                <Insets top="6.4" />
+                                            </HBox.margin>
+                                 <font>
+                                    <Font name="Calibri" size="13.0" />
+                                 </font></Label>
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                    <children>
+                                        <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="11.0" />
+                                        <Label prefHeight="17.0" prefWidth="105.0" text="Adres e-mail:">
+                                            <HBox.margin>
+                                                <Insets top="6.5" />
+                                            </HBox.margin>
+                                 <font>
+                                    <Font name="Calibri" size="13.0" />
+                                 </font></Label>
+                                    </children>
+                                </HBox>
+                        <Label fx:id="personDataLabel" text="Label" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Calibri" size="13.0" />
+                           </font></Label>
+                        <Label fx:id="phoneNumberLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Calibri" size="13.0" />
+                           </font></Label>
+                        <Label fx:id="emailLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Calibri" size="13.0" />
+                           </font></Label>
+                            </children>
+                        </GridPane>
+                        <Region maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="7.5" />
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+        <HBox prefHeight="49.0" prefWidth="440.0">
+            <children>
+                <Region prefHeight="30.0" prefWidth="10.0" />
+                <Button layoutX="20.0" layoutY="10.0" mnemonicParsing="false" onAction="#cancel" prefWidth="60.0" stylesheets="@../../../../css/operationWindow/buttons/cancel/lightCancelButtonStyle.css" text="Zamknij" />
+            </children>
+        </HBox>
+    </children>
+</VBox>

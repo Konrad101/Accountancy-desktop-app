@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.companyData.invoiceControllers.SaleInvoicesController">
+   <top>
+      <HBox fx:id="optionsBox" prefHeight="44.0" prefWidth="600.0" style="-fx-background-color: #9696A8;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="saleInvoices" mnemonicParsing="false" prefHeight="35.0" prefWidth="113.0" stylesheets="@../../css/companyWindow/selectedOptionBoxButtonStyle.css" text="VAT sprzedaż">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="purchaseInvoices" mnemonicParsing="false" onAction="#purchaseInvoicesAction" prefHeight="35.0" prefWidth="113.0" stylesheets="@../../css/companyWindow/optionBoxButtonStyle.css" text="VAT zakupy">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="1.0" top="1.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="contractors" mnemonicParsing="false" onAction="#contractorsAction" prefHeight="35.0" prefWidth="113.0" stylesheets="@../../css/companyWindow/optionBoxButtonStyle.css" text="Kontrahenci">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="1.0" top="1.0" />
+               </HBox.margin>
+            </Button>
+            <Region prefHeight="44.0" prefWidth="71.0" HBox.hgrow="ALWAYS" />
+            <Text fx:id="monthInfoText" strokeType="OUTSIDE" strokeWidth="0.0" text="Nie wybrano miesiąca" wrappingWidth="293.13670349121094">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Text>
+            <Region layoutX="354.0" layoutY="10.0" prefHeight="44.0" prefWidth="24.0" HBox.hgrow="NEVER" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="toolbarBox" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="27.0" prefWidth="600.0" style="-fx-background-color: #C8C8D2;">
+               <children>
+                  <Button fx:id="addButton" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#showAddWindow" prefHeight="25.5" prefWidth="70.0" stylesheets="@../../css/companyWindow/toolbarButtonStyle.css" text="Dodaj">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Button>
+                  <Button fx:id="editButton" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#editData" prefHeight="25.5" prefWidth="70.0" stylesheets="@../../css/companyWindow/toolbarButtonStyle.css" text="Edytuj" />
+                  <Button fx:id="deleteButton" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#deleteData" prefHeight="25.5" prefWidth="70.0" stylesheets="@../../css/companyWindow/toolbarButtonStyle.css" text="Usuń" />
+                  <Button fx:id="detailsButton" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#showDetails" prefHeight="25.5" prefWidth="75.0" stylesheets="@../../css/companyWindow/toolbarButtonStyle.css" text="Szczegóły" />
+                  <Button fx:id="monthButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#changeMonthState" prefHeight="25.5" prefWidth="118.0" stylesheets="@../../css/companyWindow/toolbarButtonStyle.css" text="Otwórz miesiąc" />
+                  <Button fx:id="searchMonthButton" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#showMonthSearchingWindow" prefHeight="25.5" stylesheets="@../../css/companyWindow/toolbarButtonStyle.css" text="Przeglądaj miesiące" />
+                  <HBox prefHeight="27.0" prefWidth="145.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Region prefHeight="27.0" prefWidth="123.0" HBox.hgrow="ALWAYS" />
+                        <Text fx:id="companyNameText" fill="#ffffff99" strokeType="OUTSIDE" strokeWidth="0.0" text="Nazwa firmy" textAlignment="RIGHT" wrappingWidth="300.0" HBox.hgrow="NEVER">
+                           <font>
+                              <Font name="Calibri Light" size="28.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin></Text>
+                     </children>
+                  </HBox>
+                  <Button mnemonicParsing="false" onAction="#backToMenu" stylesheets="@../../css/companyWindow/toolbarButtonStyle.css" text="Menu" />
+               </children>
+            </HBox>
+            <HBox prefHeight="369.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <TableView fx:id="table" prefHeight="400.0" prefWidth="200.0" stylesheets="@../../css/companyWindow/tableStyle.css" HBox.hgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="ordinalNumber" prefWidth="42.0" text="L.p." />
+                        <TableColumn fx:id="receiveDate" prefWidth="120.5" text="Data otrzymania" />
+                        <TableColumn fx:id="invoiceNumber" prefWidth="155.0" text="Numer faktury" />
+                      <TableColumn fx:id="contractor" prefWidth="177.0" text="Kontrahent" />
+                        <TableColumn fx:id="netPrice" prefWidth="105.0" text="Kwota netto" />
+                        <TableColumn fx:id="vatTaxPrice" prefWidth="105.0" text="Kwota VAT" />
+                        <TableColumn fx:id="wholeGrossPrice" prefWidth="105.0" text="Kwota brutto" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

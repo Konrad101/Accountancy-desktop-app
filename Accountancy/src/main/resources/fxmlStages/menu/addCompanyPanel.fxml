@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="350.0" style="-fx-background-color: #252525;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.menu.AddCompanyController">
+   <children>
+      <Pane prefHeight="52.0" prefWidth="400.0">
+         <children>
+            <Text fill="WHITE" layoutX="89.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dodawanie firmy">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <Line endX="132.0" endY="-3.814697265625E-6" layoutX="174.0" layoutY="43.0" startX="-130.99998474121094" startY="-3.814697265625E-6" stroke="WHITE" />
+         </children>
+      </Pane>
+      <Region prefHeight="18.0" prefWidth="350.0" />
+      <HBox>
+         <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="10.0" prefWidth="109.99999237060547" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.00000762939453" minWidth="10.0" prefWidth="240.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="companyNameLabel" prefHeight="25.0" prefWidth="229.0" stylesheets="@../../css/operationWindow/textField/darkTextFieldStyle.css" GridPane.columnIndex="1" />
+                  <TextField fx:id="companyNIPLabel" prefHeight="25.0" prefWidth="229.0" stylesheets="@../../css/operationWindow/textField/darkTextFieldStyle.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Region prefHeight="30.0" prefWidth="14.0" />
+                        <Label text="Nazwa firmy" textFill="#a2a2a2">
+                           <HBox.margin>
+                              <Insets top="6.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="13.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                     <children>
+                        <Region prefHeight="30.0" prefWidth="14.0" />
+                        <Label text="NIP" textFill="#a2a2a2">
+                           <HBox.margin>
+                              <Insets top="6.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="13.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+            <Region maxWidth="-Infinity" minWidth="-Infinity" prefHeight="93.0" prefWidth="15.5" />
+         </children>
+      </HBox>
+      <Region prefHeight="146.0" prefWidth="350.0" />
+      <HBox prefHeight="41.0" prefWidth="400.0">
+         <children>
+            <Region prefHeight="40.0" prefWidth="192.5" />
+            <Button mnemonicParsing="false" onAction="#addCompany" stylesheets="@../../css/operationWindow/buttons/accept/darkAcceptButtonStyle.css" text="Dodaj" />
+            <Button mnemonicParsing="false" onAction="#cancel" stylesheets="@../../css/operationWindow/buttons/cancel/darkCancelButtonStyle.css" text="Anuluj">
+               <HBox.margin>
+                  <Insets left="12.0" />
+               </HBox.margin>
+            </Button>
+            <Region maxWidth="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="15.5" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

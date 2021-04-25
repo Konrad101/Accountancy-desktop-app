@@ -1,0 +1,104 @@
+.table-view {
+    -fx-base: #636363;
+    -fx-control-inner-background: #d0d0d0;
+    -fx-background-color: #e0e0e0;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 0;
+    -fx-selection-bar: #737373;
+    -fx-selection-bar-non-focused: #a5a5a5;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 27;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color:
+        transparent
+        transparent
+        derive(-fx-base, 80%)
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Calibri Light";
+    -fx-text-fill: black;
+    -fx-opacity: 1;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #737373;
+}
+
+.table-row-cell:odd:selected {
+    -fx-background-color: #737373;
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: white;
+}
+
+.table-row-cell{
+    -fx-background-color: #d0d0d0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: #dadada;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+
+.table-cell .check-box {
+    /* default properties */
+    box-color: #d5d5d5;
+    mark-color: #313131;
+}
+
+.table-cell .check-box > .box {
+    -fx-background-color: #aaaaaa;
+}
+
+.table-cell .check-box:selected > .box > .mark,
+.table-cell .check-box:indeterminate  > .box > .mark {
+    -fx-background-color: #373737;
+}
+
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background,
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+
+
+.table-view > .virtual-flow > .scroll-bar:horizontal > .increment-button,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .decrement-button {
+    -fx-opacity: 0;
+    -fx-pref-width: 0px;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical > .increment-button,
+.table-view > .virtual-flow > .scroll-bar:vertical > .decrement-button {
+    -fx-opacity: 0;
+    -fx-pref-height: 0px;
+}
+
+.table-view > .virtual-flow > .scroll-bar > .thumb {
+    -fx-background-radius: 5em;
+    -fx-background-color: #b9b9b9;
+}
+

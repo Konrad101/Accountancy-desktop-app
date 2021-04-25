@@ -1,0 +1,15 @@
+.button {
+    -fx-background-color: black;
+    -fx-background-radius: 0, 0, 0, 0;
+    -fx-background-insets: 0, 1, 2, 0;
+    -fx-alignment: center-left;
+    -fx-font-family: "Calibri";
+    -fx-effect: dropshadow(three-pass-box , rgba(0,0,0,0.6) , 1, 0.0 , 0 , 0 );
+    -fx-font-size: 15px;
+    -fx-padding: 5 10 5 10;
+}
+
+.button: hover{
+    -fx-background-color: #303030;
+}
+

@@ -1,0 +1,15 @@
+.button {
+    -fx-background-color: #636363;
+    -fx-background-radius: 0, 0, 0, 0;
+    -fx-background-insets: 0, 1, 2, 0;
+    -fx-effect: dropshadow(three-pass-box , rgba(0,0,0,0.6) , 1, 0.0 , 0 , 0 );
+    -fx-font-family: "Calibri Light";
+    -fx-text-fill: #d9d9d9;
+    -fx-font-size: 14px;
+    -fx-padding: 4 10 5 10;
+}
+
+.button: pressed {
+    -fx-background-color: #505050;
+}
+

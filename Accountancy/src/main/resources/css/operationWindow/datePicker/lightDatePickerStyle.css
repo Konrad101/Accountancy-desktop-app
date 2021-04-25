@@ -1,0 +1,48 @@
+.date-picker {
+    -fx-background-color: transparent, transparent, #e0e0e0, #eaeaea;
+    -fx-background-radius: 0, 0, 0, 0;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-padding: 0;
+}
+
+.date-picker: focused {
+    -fx-background-color: transparent, transparent, #858585, -fx-body-color;
+    -fx-background-radius: 0, 0, 0, 0;
+    -fx-background-insets: -1.4, 0, 1, 2;
+}
+
+/* Text field */
+
+.date-picker > .text-field {
+    -fx-font-family: "Calibri";
+    -fx-font-size: 14px;
+    -fx-padding: 1,1,1,1;
+    -fx-text-fill: #373737;
+
+    -fx-background-color: #999999, #d0d0d0;
+    -fx-background-insets: 0, 0 0 1.5 0 ;
+    -fx-background-radius: 0 ;
+}
+
+.date-picker > .text-field: focused {
+    -fx-background-color: #1a7eeb, #d0d0d0 ;
+}
+
+/* Arrow button */
+
+.date-picker > .arrow-button > .arrow {
+    -fx-background-color: black, #e3e3e3;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.416667em 0.416667em 0.333333em 0.333333em; /* 5 5 4 4 */
+    -fx-scale-shape: true;
+}
+
+.date-picker > .arrow-button {
+    -fx-background-color: #858585;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+    -fx-background-insets: 0, 0 0 1.5 0 ;
+}
+
+.date-picker > .arrow-button: hover {
+    -fx-background-color: #999999;
+}

@@ -1,0 +1,13 @@
+.text-field {
+    -fx-font-family: "Calibri";
+    -fx-font-size: 14px;
+    -fx-padding: 1,1,1,1;
+    -fx-text-fill: #cfcfcf;
+
+    -fx-background-color: #505050, #373737 ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+.text-field:focused {
+    -fx-background-color: #ffffff, #373737 ;
+}
